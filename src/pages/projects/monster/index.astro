@@ -1,0 +1,48 @@
+---
+    import Header from "../../../components/header.astro"
+    import MonsterGame from './MonsterGame.svelte'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="/global-styles.css">
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Blank</title>
+        <link rel="stylesheet" href="/global-styles.css">
+	</head>
+
+	<body>
+		<Header />
+        <MonsterGame client:only />
+	</body>
+</html>
+
+
+<style is:global>
+    body, button {
+        font-size: 35px;
+    }
+
+    body {
+        color:yellow;
+    }
+
+    .monster {
+        background-color: rgba(0, 0, 0, 0.8);
+        margin: 25px;
+        padding: 15px;
+        display: inline-block;
+    }
+
+    table {
+        background-color: black;
+    }
+
+    #text {
+        background-color: black;
+        display: inline-block;
+    }
+</style>

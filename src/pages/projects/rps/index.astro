@@ -1,0 +1,47 @@
+---
+import Header from "../../../components/header.astro"
+import Rps from "./Rps.svelte"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/global-styles.css">
+    <title>Document</title>
+    <!-- http://localhost:5500/challenges/rps -->
+    <!-- 
+        a button that says rock
+        a button that says paper
+        a button that says scissors
+        div with id of "user"
+        div with id of "cpu"
+        div with id of "result"
+     -->
+</head>
+<body>
+    <Header />
+    <div id="div">
+        <Rps client:load /> 
+    </div>
+
+
+</body>
+</html>
+
+<style is:global>
+    html, body {
+        height: 100%;
+    }
+    body {
+        border: 5px solid red;
+    }
+     #div {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        height: 100%;
+    }
+</style>

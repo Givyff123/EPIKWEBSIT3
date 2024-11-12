@@ -1,0 +1,100 @@
+---
+import Dropdown from './Dropdown.svelte'
+---
+
+<header>
+    <a href="/" id="mainA">
+        <h1 id="Simon">Simon</h1>
+    </a>
+    
+    <button id="menu" class="mobile">
+        <img src="/icons/menu.svg" alt="">
+    </button>
+    <nav>
+        <a href="/skills">
+            <h1 id="skills-text"class="desktop">Skills</h1>
+        </a>
+        <Dropdown client:load />
+        
+    </nav>
+
+  
+
+
+</header>
+
+<style>
+    
+    #Simon {
+        font-size: 50px;
+        position: relative;
+        left: 10px;
+
+
+    }
+    a{
+        color:white;
+        text-decoration:none;
+        border: 10px solid black;
+        border-radius: 50px;
+
+
+    }
+    #mainA {
+        width: 170px;
+    }
+    #menu {
+        margin-right: 20px;
+        
+    }
+    #menu > img {
+        width: 50px;
+    }
+    header {
+        display:flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    /* Desktop styles below */
+    @media (min-width: 1000px) {
+        .mobile {
+            display: none;
+        }
+
+        .desktop {
+            display: block;
+        }
+
+        header {
+            /* justify-content: flex-start; */
+        }
+
+        header nav {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        #skills-text {
+        }
+        #games {
+            width: 200px;
+            height: 60px;
+            border-radius: 15px;
+            font-size: 20px;
+            background-image: linear-gradient(white,yellow);
+        }
+        #UI {
+            width: 200px;
+            height: 60px;
+            border-radius: 15px;
+            font-size: 20px;
+        }
+    }
+</style>
