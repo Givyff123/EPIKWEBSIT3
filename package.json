@@ -14,5 +14,11 @@
     "astro": "^4.16.7",
     "svelte": "^5.1.9",
     "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "4.0.1"
+  },
+  "overrides": {
+    "@sveltejs/vite-plugin-svelte": "4.0.1"
   }
 }
