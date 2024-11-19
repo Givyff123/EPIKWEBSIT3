@@ -7,7 +7,7 @@ import Header from "../components/header.astro"
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="stylesheet" href="/global-styles.css">
+		<link rel="stylesheet" href={import.meta.env.BASE_URL + "/global-styles.css"}>
 		<meta name="generator" content={Astro.generator} />
 		<title>Skills</title>
 	</head>

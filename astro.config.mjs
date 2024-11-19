@@ -6,5 +6,7 @@ import svelte from '@astrojs/svelte';
 export default defineConfig({
   integrations: [svelte()],
   output: "static",
-  outDir: "./docs"
+  outDir: "./docs",
+  base: "EPIKWEBSIT3/docs",
+  site: "https://givyff123.github.io"
 });

@@ -3,15 +3,15 @@ import Dropdown from './Dropdown.svelte'
 ---
 
 <header>
-    <a href="/" id="mainA">
+    <a href={`${import.meta.env.BASE_URL}/`} id="mainA">
         <h1 id="Simon">Simon</h1>
     </a>
     
     <button id="menu" class="mobile">
-        <img src="/icons/menu.svg" alt="">
+        <img src={`${import.meta.env.BASE_URL}/icons/menu.svg`} alt="">
     </button>
     <nav>
-        <a href="/skills">
+        <a href={`${import.meta.env.BASE_URL}/skills`}>
             <h1 id="skills-text"class="desktop">Skills</h1>
         </a>
         <Dropdown client:load />
