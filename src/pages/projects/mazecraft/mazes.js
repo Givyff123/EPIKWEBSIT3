@@ -1,4 +1,17 @@
-// 
+/*
+    git add .
+    git commit -m ""
+    git push origin main
+
+    git config --global --unset credential.helper
+    git config --global --unset-all
+
+    gh --help
+
+    winget install --id GitHub.cli
+
+    gh auth login
+*/
 
 const mazes = [
 `
